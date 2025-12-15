@@ -166,9 +166,9 @@ h1{
 }
 
 /* Row patterns */
-.project-card.row-single{ grid-column: 1 / -1; height:180px; }
-.project-card.row-two-big{ grid-column: span 7; height:160px; }
-.project-card.row-two-small{ grid-column: span 5; height:140px; }
+.project-card.row-single{ grid-column: 1 / -1; height:130px; }
+.project-card.row-two-big{ grid-column: span 7; height:120px; }
+.project-card.row-two-small{ grid-column: span 5; height:100px; }
 
 .project-meta{
   padding:18px 18px 16px; /* un poco más de aire arriba */
