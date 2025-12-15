@@ -167,8 +167,8 @@ h1{
 
 /* Row patterns */
 .project-card.row-single{ grid-column: 1 / -1; }
-.project-card.row-two-big{ grid-column: span 8; }
-.project-card.row-two-small{ grid-column: span 4; }
+.project-card.row-two-big{ grid-column: span 7; }
+.project-card.row-two-small{ grid-column: span 5; }
 
 /* Card content */
 .project-meta{ padding:16px; }
