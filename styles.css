@@ -170,8 +170,9 @@ h1{
 .project-card.row-two-big{ grid-column: span 7; height:160px; }
 .project-card.row-two-small{ grid-column: span 5; height:140px; }
 
-/* Card content */
-.project-meta{ padding:16px; }
+.project-meta{
+  padding:18px 18px 16px; /* un poco más de aire arriba */
+}
 
 .project-top{
   display:flex;
@@ -209,19 +210,22 @@ h1{
   line-height:1.4;
 }
 
+/* Project image: subtle preview  */
 .project-media{
   border-top:1px solid var(--line);
   background:var(--card);
-  max-height:160px;        /* 👈 clave */
+  height:120px;           /* 👈 MUY IMPORTANTE */
   overflow:hidden;
+  flex-shrink:0;          /* evita que crezca */
 }
 
 .project-media img{
   width:100%;
-  height:160px;            /* 👈 fija altura */
-  object-fit:cover;        /* recorte elegante */
+  height:100%;
+  object-fit:cover;
   display:block;
 }
+
 
 
 /* Footer */
