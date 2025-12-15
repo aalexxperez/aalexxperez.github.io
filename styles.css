@@ -209,6 +209,32 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
   display:block;
   object-fit:cover;
 }
+/* Projects section background */
+.projects-section{
+  background:#f6f7f9; /* gris muy suave */
+  padding:48px 0;
+  margin:40px 0;
+}
+
+/* Ajuste para que el contenido no quede pegado */
+.projects-section > h2,
+.projects-section > .muted,
+.projects-section > .projects-grid{
+  max-width:1050px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 20px;
+}
+
+/* Separación entre título y grid */
+.projects-section h2{
+  margin-bottom:8px;
+}
+
+.projects-section .muted{
+  margin-bottom:24px;
+}
+
 
 
 @media (max-width: 860px){
