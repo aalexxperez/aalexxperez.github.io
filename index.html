@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tu Nombre — Portfolio</title>
+  <title>Your Name — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="container topbar__inner">
-      <a class="brand" href="#">TuNombre</a>
+      <a class="brand" href="#">YourName</a>
       <nav class="nav">
         <a href="#work">Work</a>
-        <a href="#posts">Blog</a>
-        <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
       </nav>
     </div>
   </header>
@@ -23,57 +23,53 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__left">
-        <h1>Hola, soy <span class="accent">Tu Nombre</span> ✌</h1>
+        <h1>Hi, I’m <span class="accent">Your Name</span> 👋</h1>
         <p class="lead">
-          Tu rol (ej: diseñador / dev / analista) desde tu ciudad.
-          Una frase corta sobre lo que haces.
+          I design and build simple, clean digital experiences.
+          Below is a selection of my work.
         </p>
 
         <div class="chips">
-          <span class="chip">Skill 1</span>
-          <span class="chip">Skill 2</span>
-          <span class="chip">Skill 3</span>
+          <span class="chip">Web Design</span>
+          <span class="chip">Frontend</span>
+          <span class="chip">UX</span>
         </div>
 
         <div class="cta">
-          <a class="btn" href="#work">Descubre mi trabajo</a>
-          <a class="btn btn--ghost" href="#contacto">Contacto</a>
+          <a class="btn" href="#work">Discover my work</a>
+          <a class="btn btn--ghost" href="#contact">Contact</a>
         </div>
       </div>
 
       <div class="hero__right">
-        <img class="avatar" src="assets/avatar.jpg" alt="Foto de Tu Nombre">
+        <img class="avatar" src="assets/avatar.jpg" alt="Your Name">
       </div>
     </section>
 
-    <!-- SKILLS VISUAL -->
-    <section class="panel">
-      <h2>Mi enfoque</h2>
-      <p class="muted">Un resumen visual de mis habilidades (opcional).</p>
-      <div class="media">
-        <img src="assets/skills.png" alt="Core skills" />
-      </div>
-    </section>
-
-    <!-- WORK / TIMELINE -->
+    <!-- WORK -->
     <section id="work" class="panel">
-      <h2>Trabajo destacado</h2>
-      <p class="muted">Una selección corta y potente, por años.</p>
+      <h2>Selected work</h2>
+      <p class="muted">
+        A small selection of recent projects.
+        Each one focuses on clarity and usability.
+      </p>
 
       <div class="timeline">
         <div class="year">2025</div>
 
         <article class="card">
           <div class="card__text">
-            <h3>Proyecto 1 — Título corto</h3>
-            <p>Descripción en 2–3 líneas: qué hiciste, para quién y el resultado.</p>
+            <h3>Project One</h3>
+            <p>
+              A short description of the project,
+              the problem and the solution.
+            </p>
             <div class="links">
-              <a href="#" target="_blank" rel="noreferrer">Ver demo</a>
-              <a href="#" target="_blank" rel="noreferrer">Caso de estudio</a>
+              <a class="btn btn--ghost" href="projects/project-1.html">View project</a>
             </div>
           </div>
           <div class="card__media">
-            <img src="assets/work-1.png" alt="Mockup Proyecto 1">
+            <img src="assets/work-1.png" alt="Project One">
           </div>
         </article>
 
@@ -81,43 +77,36 @@
 
         <article class="card">
           <div class="card__text">
-            <h3>Proyecto 2 — Título corto</h3>
-            <p>Qué problema resolvía y qué impacto tuvo (métricas si puedes).</p>
+            <h3>Project Two</h3>
+            <p>
+              Another project focused on clean design
+              and clear user flows.
+            </p>
             <div class="links">
-              <a href="#" target="_blank" rel="noreferrer">Ver</a>
+              <a class="btn btn--ghost" href="projects/project-2.html">View project</a>
             </div>
           </div>
           <div class="card__media">
-            <img src="assets/work-2.png" alt="Mockup Proyecto 2">
+            <img src="assets/work-2.png" alt="Project Two">
           </div>
         </article>
-
-        <div class="year">2023</div>
-        <p class="muted">Más proyectos / logros (puedes seguir el mismo patrón).</p>
       </div>
     </section>
 
-    <!-- POSTS -->
-    <section id="posts" class="panel">
-      <h2>Posts</h2>
-      <p class="muted">Quick reads, máximo valor.</p>
-      <ul class="list">
-        <li><a href="#">Post 1 — Título</a> <span class="tag">2025</span></li>
-        <li><a href="#">Post 2 — Título</a> <span class="tag">2024</span></li>
-      </ul>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="panel panel--contact">
-      <h2>¿Hablamos?</h2>
-      <p class="muted">Si quieres colaborar o tienes una idea, escríbeme.</p>
-      <div class="contact">
-        <a class="btn" href="mailto:tuemail@correo.com">tuemail@correo.com</a>
+    <!-- CONTACT -->
+    <section id="contact" class="panel panel--contact">
+      <div>
+        <h2>Let’s talk</h2>
+        <p class="muted">
+          Have a project in mind?  
+          Feel free to reach out.
+        </p>
       </div>
+      <a class="btn" href="mailto:you@email.com">you@email.com</a>
     </section>
 
     <footer class="footer">
-      <span>© <span id="y"></span> Tu Nombre</span>
+      <span>© <span id="y"></span> Your Name</span>
     </footer>
   </main>
 
