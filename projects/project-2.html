@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Two — Case Study</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html">YourName</a>
+      <nav class="nav">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel" style="margin-top:24px;">
+      <p class="muted">Case study</p>
+      <h1>Project Two</h1>
+      <p class="lead">
+        A focused project built to improve clarity
+        and user experience.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Overview</h2>
+      <p class="muted">
+        The goal of this project was to simplify a complex process
+        and present it in a clear and understandable way.
+      </p>
+
+      <div class="chips">
+        <span class="chip">Role: Frontend</span>
+        <span class="chip">Duration: 3 weeks</span>
+        <span class="chip">Tools: HTML, CSS</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>What I did</h2>
+      <ul class="list">
+        <li>Structured the content for clarity.</li>
+        <li>Designed a minimal and clean layout.</li>
+        <li>Optimized the experience for all devices.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Outcome</h2>
+      <ul class="list">
+        <li>Improved readability.</li>
+        <li>Clear visual hierarchy.</li>
+        <li>Consistent design system.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Visuals</h2>
+      <div class="media">
+        <img src="../assets/work-2.png" alt="Project Two screenshot">
+      </div>
+    </section>
+
+    <section class="panel panel--contact">
+      <div>
+        <h2>Want to collaborate?</h2>
+        <p class="muted">Let’s build something together.</p>
+      </div>
+      <a class="btn btn--ghost" href="../index.html#work">Back to work</a>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> Your Name</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
