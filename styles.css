@@ -10,6 +10,7 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -17,29 +18,42 @@ body{
   color:var(--text);
 }
 
-.container{max-width:1050px; margin:0 auto; padding:0 20px;}
+.container{
+  max-width:1050px;
+  margin:0 auto;
+  padding:0 20px;
+}
 
+/* Top bar */
 .topbar{
-  position:sticky; top:0;
+  position:sticky;
+  top:0;
   background:rgba(255,255,255,.85);
   backdrop-filter: blur(10px);
   border-bottom:1px solid var(--line);
   z-index:10;
 }
 .topbar__inner{
-  display:flex; align-items:center; justify-content:space-between;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
   padding:14px 0;
 }
 .brand{
-  font-weight:700; text-decoration:none; color:var(--text);
+  font-weight:700;
+  text-decoration:none;
+  color:var(--text);
   letter-spacing:-0.2px;
 }
 .nav a{
-  text-decoration:none; color:var(--muted);
-  margin-left:16px; font-weight:600;
+  text-decoration:none;
+  color:var(--muted);
+  margin-left:16px;
+  font-weight:600;
 }
 .nav a:hover{color:var(--text)}
 
+/* Hero */
 .hero{
   display:grid;
   grid-template-columns: 1.2fr .8fr;
@@ -47,20 +61,41 @@ body{
   padding:54px 0 20px;
   align-items:center;
 }
-h1{font-size:44px; line-height:1.08; margin:0 0 10px}
+
+h1{
+  font-size:44px;
+  line-height:1.08;
+  margin:0 0 10px;
+}
 .accent{color:var(--accent)}
-.lead{font-size:18px; color:var(--muted); margin:0 0 18px; max-width:55ch}
+
+.lead{
+  font-size:18px;
+  color:var(--muted);
+  margin:0 0 18px;
+  max-width:60ch;
+}
 
 .avatar{
   width:100%;
-  max-width:220px;
+  max-width:320px;
   border-radius:999px;
   border:1px solid var(--line);
   display:block;
   margin-left:auto;
 }
 
-.chips{display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 18px}
+/* Smaller avatar */
+.avatar--sm{
+  max-width:220px;
+}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:8px 0 18px;
+}
 .chip{
   border:1px solid var(--line);
   background:#fff;
@@ -71,9 +106,17 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
   font-size:14px;
 }
 
-.cta{display:flex; gap:12px; flex-wrap:wrap}
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* Buttons */
 .btn{
-  display:inline-flex; align-items:center; justify-content:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   padding:10px 14px;
   border-radius:999px;
   background:var(--text);
@@ -83,90 +126,110 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
   border:1px solid var(--text);
 }
 .btn--ghost{
-  background:#fff; color:var(--text);
+  background:#fff;
+  color:var(--text);
   border:1px solid var(--line);
 }
 .btn--ghost:hover{border-color:var(--text)}
 
+/* Panels (generic sections) */
 .panel{
   margin:26px 0;
   padding:22px;
   border:1px solid var(--line);
   border-radius:var(--radius);
-  background: #fff;
+  background:#fff;
 }
-.panel h2{margin:0 0 10px; font-size:22px}
-.muted{color:var(--muted); margin:0 0 14px}
+.panel h2{
+  margin:0 0 10px;
+  font-size:22px;
+}
 
+.muted{
+  color:var(--muted);
+  margin:0 0 14px;
+}
+
+/* Media */
 .media{
   border-radius:var(--radius);
   border:1px solid var(--line);
   overflow:hidden;
   background:var(--card);
 }
-.media img{width:100%; display:block}
-
-.timeline{margin-top:10px}
-.year{
-  margin:18px 0 10px;
-  font-weight:800;
-  color:var(--text);
+.media img{
+  width:100%;
+  display:block;
 }
 
-.card{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:16px;
-  padding:16px;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  background:var(--card);
-  margin-bottom:14px;
+/* Lists */
+.list{
+  margin:0;
+  padding-left:18px;
 }
-.card__text h3{margin:0 0 8px}
-.card__text p{margin:0 0 10px; color:var(--muted)}
-.links a{
-  font-weight:700;
-  color:var(--text);
-  text-decoration:none;
-  margin-right:12px;
+.list li{
+  margin:10px 0;
 }
-.links a:hover{text-decoration:underline}
-.card__media{
-  border-radius:14px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  background:#fff;
-}
-.card__media img{width:100%; height:100%; object-fit:cover; display:block}
 
-.list{margin:0; padding-left:18px}
-.list li{margin:10px 0}
 .tag{
   font-size:12px;
   padding:4px 10px;
   border-radius:999px;
   border:1px solid var(--line);
   color:var(--muted);
-  margin-left:10px;
 }
 
-.panel--contact{display:flex; align-items:center; justify-content:space-between; gap:16px}
+/* Contact panel layout */
+.panel--contact{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
+/* Footer */
 .footer{
   padding:26px 0 40px;
   color:var(--muted);
   font-weight:600;
 }
 
-/* Projects grid (jbaes-style) */
+/* ===== Projects section (no border wrapper + light gray background) ===== */
+.projects-section{
+  background:#f6f7f9; /* light gray */
+  padding:48px 0;
+  margin:40px 0;
+}
+
+/* Ensure content aligns to container even though section is full width */
+.projects-section > h2,
+.projects-section > .muted,
+.projects-section > .projects-grid{
+  max-width:1050px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 20px;
+}
+
+.projects-section h2{
+  margin-bottom:8px;
+}
+
+.projects-section .muted{
+  margin-bottom:24px;
+}
+
+/* ===== Projects grid (staggered / intercalado tipo Jasper) ===== */
 .projects-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(12, 1fr);
   gap:16px;
   margin-top:16px;
 }
 
+/* Default card width */
 .project-card{
+  grid-column: span 6;            /* 2 per row */
   display:flex;
   flex-direction:column;
   text-decoration:none;
@@ -178,9 +241,48 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
+/* Wider cards */
+.project-card.wide{
+  grid-column: span 8;
+}
+
+/* Narrower cards (optional) */
+.project-card.narrow{
+  grid-column: span 4;
+}
+
 .project-card:hover{
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+/* Top row inside meta: year tag + arrow */
+.project-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.arrow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-weight:800;
+  line-height:1;
+  transition: transform .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.project-card:hover .arrow{
+  transform: translateX(2px) translateY(-2px);
+  color:var(--text);
+  border-color: var(--text);
 }
 
 .project-meta{
@@ -188,7 +290,7 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
 }
 
 .project-meta h3{
-  margin:8px 0 6px;
+  margin:0 0 8px;
   font-size:18px;
 }
 
@@ -209,37 +311,27 @@ h1{font-size:44px; line-height:1.08; margin:0 0 10px}
   display:block;
   object-fit:cover;
 }
-/* Projects section background */
-.projects-section{
-  background:#f6f7f9; /* gris muy suave */
-  padding:48px 0;
-  margin:40px 0;
-}
 
-/* Ajuste para que el contenido no quede pegado */
-.projects-section > h2,
-.projects-section > .muted,
-.projects-section > .projects-grid{
-  max-width:1050px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:0 20px;
-}
-
-/* Separación entre título y grid */
-.projects-section h2{
-  margin-bottom:8px;
-}
-
-.projects-section .muted{
-  margin-bottom:24px;
-}
-
-
-
+/* ===== Responsive ===== */
 @media (max-width: 860px){
-  .hero{grid-template-columns: 1fr; padding-top:34px}
-  .avatar{margin:0; max-width:200px}
-  .card{grid-template-columns: 1fr}
-  .panel--contact{flex-direction:column; align-items:flex-start}
+  .hero{
+    grid-template-columns: 1fr;
+    padding-top:34px;
+  }
+
+  .avatar{
+    margin:0;
+    max-width:220px;
+  }
+
+  .panel--contact{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .project-card,
+  .project-card.wide,
+  .project-card.narrow{
+    grid-column: span 12; /* 1 per row on mobile */
+  }
 }
