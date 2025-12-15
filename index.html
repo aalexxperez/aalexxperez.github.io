@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Perez — M365 & Intune Specialist</title>
-  <meta name="description" content="Alex Perez — Intune, Microsoft 365 automation, PowerShell and M365 security.">
+  <title>Alex Perez — M365 | Intune | Automation</title>
+  <meta name="description" content="Alex Perez — Intune, Microsoft 365 automation, PowerShell and M365 security. Notes and projects." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -13,8 +13,9 @@
     <div class="container topbar__inner">
       <a class="brand" href="#">Alex Perez</a>
       <nav class="nav">
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
       </nav>
@@ -22,55 +23,39 @@
   </header>
 
   <main class="container">
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero__left">
         <h1>Hi, I’m <span class="accent">Alex Perez</span> 👋</h1>
         <p class="lead">
-          I help companies manage and secure Microsoft 365 environments.
-          My focus is Intune, automation, PowerShell and M365 security.
+          I work with Microsoft 365: Intune, automation, PowerShell, and security.
+          This site is a simple place to share what I build and how I build it.
         </p>
 
         <div class="chips">
           <span class="chip">Intune</span>
-          <span class="chip">Automation</span>
+          <span class="chip">M365 Automation</span>
           <span class="chip">PowerShell</span>
           <span class="chip">M365 Security</span>
         </div>
 
         <div class="cta">
-          <a class="btn" href="#work">See my work</a>
-          <a class="btn btn--ghost" href="#contact">Contact</a>
+          <a class="btn" href="#projects">Browse projects</a>
+          <a class="btn btn--ghost" href="#notes">Read notes</a>
         </div>
       </div>
 
       <div class="hero__right">
-        <img class="avatar" src="assets/avatar.jpg" alt="Alex Perez">
+        <img class="avatar avatar--sm" src="assets/avatar.jpg" alt="Alex Perez">
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="panel">
-      <h2>What I do</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
       <p class="muted">
-        I build practical solutions that reduce manual work, improve compliance and increase security in Microsoft 365.
-      </p>
-
-      <div class="chips">
-        <span class="chip">Intune policies & compliance</span>
-        <span class="chip">Endpoint hardening</span>
-        <span class="chip">Automations & reporting</span>
-        <span class="chip">PowerShell scripting</span>
-        <span class="chip">Identity & access (Entra ID)</span>
-        <span class="chip">Security baselines</span>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section id="work" class="panel">
-      <h2>Selected projects</h2>
-      <p class="muted">
-        A few examples of the kind of work I deliver. Click “View project” to see details.
+        Real work examples and small labs. Each project page includes the steps, decisions, and lessons learned.
       </p>
 
       <div class="timeline">
@@ -80,14 +65,15 @@
           <div class="card__text">
             <h3>Intune Hardening & Compliance Baseline</h3>
             <p>
-              Standardized device configuration and compliance using Intune policies, baselines and clear reporting.
+              A practical baseline: structure, policies, compliance checks, and reporting.
+              Focused on clarity and maintainability.
             </p>
             <div class="links">
-              <a class="btn btn--ghost" href="projects/intune-hardening.html">View project</a>
+              <a class="btn btn--ghost" href="projects/intune-hardening.html">View details</a>
             </div>
           </div>
           <div class="card__media">
-            <img src="assets/work-1.png" alt="Intune Hardening project">
+            <img src="assets/work-1.png" alt="Intune baseline project">
           </div>
         </article>
 
@@ -97,14 +83,14 @@
           <div class="card__text">
             <h3>PowerShell Automation for M365 Operations</h3>
             <p>
-              Automated repetitive admin tasks (users, groups, reports) to save time and reduce human error.
+              Scripts and patterns I use to automate recurring admin tasks and produce consistent reports.
             </p>
             <div class="links">
-              <a class="btn btn--ghost" href="projects/m365-automation.html">View project</a>
+              <a class="btn btn--ghost" href="projects/m365-automation.html">View details</a>
             </div>
           </div>
           <div class="card__media">
-            <img src="assets/work-2.png" alt="M365 Automation project">
+            <img src="assets/work-2.png" alt="PowerShell automation project">
           </div>
         </article>
 
@@ -112,27 +98,56 @@
 
         <article class="card">
           <div class="card__text">
-            <h3>Security Improvements for Microsoft 365</h3>
+            <h3>M365 Security Improvements</h3>
             <p>
-              Strengthened identity, access and security posture with clear controls and documentation.
+              Identity and tenant security improvements with an “easy to review, easy to keep” approach.
             </p>
             <div class="links">
-              <a class="btn btn--ghost" href="projects/m365-security.html">View project</a>
+              <a class="btn btn--ghost" href="projects/m365-security.html">View details</a>
             </div>
           </div>
           <div class="card__media">
-            <img src="assets/work-3.png" alt="M365 Security project">
+            <img src="assets/work-3.png" alt="M365 security project">
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- NOTES -->
+    <section id="notes" class="panel">
+      <h2>Notes</h2>
+      <p class="muted">
+        Short guides, checklists, and small explanations. (You can turn these into separate pages later.)
+      </p>
+
+      <ul class="list">
+        <li><a href="#">How I structure Intune policies (naming, scope, ownership)</a> <span class="tag">draft</span></li>
+        <li><a href="#">PowerShell logging pattern: simple, readable, reliable</a> <span class="tag">draft</span></li>
+        <li><a href="#">M365 security quick review: what I check first</a> <span class="tag">draft</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p class="muted">
+        I enjoy turning complex Microsoft 365 topics into clear steps.
+        I care about documentation, repeatable processes, and security by default.
+      </p>
+
+      <div class="chips">
+        <span class="chip">Clear documentation</span>
+        <span class="chip">Repeatable processes</span>
+        <span class="chip">Security-first mindset</span>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="panel panel--contact">
       <div>
-        <h2>Let’s talk</h2>
+        <h2>Contact</h2>
         <p class="muted">
-          If you need help with Intune, M365 automation or security, feel free to contact me.
+          If you want to ask a question or share an idea, email works best.
         </p>
       </div>
       <a class="btn" href="mailto:YOUR.EMAIL@domain.com">YOUR.EMAIL@domain.com</a>
