@@ -160,7 +160,7 @@ h1{
 
   border:1px solid var(--line);
   border-radius:var(--radius);
-  background:#F2F2F2;
+  background:#FAFAFA;
   overflow:hidden;
 
   transition: transform .15s ease, box-shadow .15s ease;
